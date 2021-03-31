@@ -1009,6 +1009,18 @@ let
         };
       };
 
+      zjhmale.Idris = buildVscodeMarketplaceExtension {
+        mktplcRef = {
+          name = "Idris";
+          publisher = "zjhmale";
+          version = "0.9.8";
+          sha256 = "1dfh1rgybhnf5driwgxh69a1inyzxl72njhq93qq7mhacwnyfsdp";
+        };
+        meta = with lib; {
+          license = licenses.mit;
+        };
+      };
+
       llvm-org.lldb-vscode = llvmPackages_8.lldb;
 
       WakaTime.vscode-wakatime = callPackage ./wakatime {};

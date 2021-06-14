@@ -768,6 +768,22 @@ let
         };
       };
 
+      meraymond.idris-vscode = buildVscodeMarketplaceExtension {
+        mktplcRef = {
+          publisher = "meraymond";
+          name = "idris-vscode";
+          version = "0.0.9";
+          sha256 = "16n8bi34alpyybm90h3nn1rdw6r6s1xdyx11dbggr6fwdps70mv9";
+        };
+        meta = with lib; {
+          changelog = "https://marketplace.visualstudio.com/items/meraymond.idris-vscode/changelog";
+          description = "Language support for Idris and Idris 2.";
+          downloadPage = "https://marketplace.visualstudio.com/items?itemName=meraymond.idris-vscode";
+          homepage = "https://github.com/meraymond2/idris-vscode";
+          license = lib.licenses.mit;
+        };
+      };
+
       mikestead.dotenv = buildVscodeMarketplaceExtension {
         mktplcRef = {
           name = "dotenv";

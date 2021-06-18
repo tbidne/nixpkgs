@@ -97,6 +97,22 @@ let
         };
       };
 
+      arcticicestudio.nord-visual-studio-code = buildVscodeMarketplaceExtension {
+        mktplcRef = {
+          publisher = "arcticicestudio";
+          name = "nord-visual-studio-code";
+          version = "0.15.1";
+          sha256 = "0lc50jkwxq3vffpwlkqdnkq77c7gbpfn1lk9l0n9qxsyfyhb68qj";
+        };
+        meta = with lib; {
+          changelog = "https://marketplace.visualstudio.com/items/arcticicestudio.nord-visual-studio-code/changelog";
+          description = "An arctic, north-bluish clean and elegant Visual Studio Code theme.";
+          downloadPage = "https://marketplace.visualstudio.com/items?itemName=meraymond.idris-vscode";
+          homepage = "https://github.com/arcticicestudio/nord-visual-studio-code";
+          license = lib.licenses.mit;
+        };
+      };
+
       ms-python.vscode-pylance = buildVscodeMarketplaceExtension {
         mktplcRef = {
           name = "vscode-pylance";

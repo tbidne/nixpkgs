@@ -786,6 +786,19 @@ let
         };
       };
 
+      enkia.tokyo-night = buildVscodeMarketplaceExtension {
+        mktplcRef = {
+          name = "tokyo-night";
+          publisher = "enkia";
+          version = "0.7.9";
+          sha256 = "1yci2krmmxz4w105c9mjzhv8r0wbpf3k603rz5p0syq1b7g9vsfv";
+        };
+        meta = with lib; {
+          license = licenses.mit;
+        };
+      };
+
+
       esbenp.prettier-vscode = buildVscodeMarketplaceExtension {
         mktplcRef = {
           name = "prettier-vscode";

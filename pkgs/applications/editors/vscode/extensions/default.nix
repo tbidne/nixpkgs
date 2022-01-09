@@ -297,6 +297,18 @@ let
         };
       };
 
+      banacorn.agda-mode = buildVscodeMarketplaceExtension {
+        mktplcRef = {
+          name = "agda-mode";
+          publisher = "banacorn";
+          version = "0.3.7";
+          sha256 = "0hmldbyldr4h53g5ifrk5n5504yzhbq5hjh087id6jbjkp41gs9b";
+        };
+        meta = with lib; {
+          license = licenses.mit;
+        };
+      };
+
       bbenoist.nix = buildVscodeMarketplaceExtension {
         mktplcRef = {
           name = "Nix";
@@ -797,7 +809,6 @@ let
           license = licenses.mit;
         };
       };
-
 
       esbenp.prettier-vscode = buildVscodeMarketplaceExtension {
         mktplcRef = {

@@ -547,6 +547,16 @@ in
               '';
             };
 
+            substituters-require-reachable = mkOption {
+              type = types.bool;
+              default = true;
+              example = false;
+              description = lib.mdDoc ''
+                If set to false, an unreachable binary cache URL given by
+                settings.substituters will not cause a build failure.
+              '';
+            };
+
             trusted-substituters = mkOption {
               type = types.listOf types.str;
               default = [ ];
